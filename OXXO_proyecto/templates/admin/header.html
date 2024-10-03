@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pagina de inicio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        .casilla{
+            color: #363636;
+        }
+
+        .casilla:hover{
+            cursor: pointer;
+            background-color: #e0dede;
+            color: #242424;
+            border-radius: 0.2rem;
+        }
+
+        .box1{
+            display: flex;
+            align-items: first baseline;
+            width: 100rem; 
+            margin: auto;
+        }
+
+        .another{
+            color: #363636;
+        }
+
+        .another:hover{
+            border-bottom: #f04f4f 5px solid;
+            cursor: pointer;
+        }
+
+        .articuloVenta:hover{
+            background: rgb(214, 212, 212);
+            cursor: pointer;
+        }
+
+        .filtro{
+            display: none;
+        }
+
+        .filtro:hover{
+            background: rgb(214, 212, 212);
+            cursor: pointer;
+        }
+
+        .herramientas{
+            width: 10rem;
+            font-size: larger;
+            text-decoration: none;
+            color: white;
+            text-align: left;
+            padding: 0.5rem;
+        }
+
+        .herramientas:hover{
+            background-color: #c98686;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+        <nav style="border-bottom: 1px solid black; background-color: #f04f4f; color: white;"
+            class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid" style="height: 2.5rem;background-color: #f04f4f; width: 95%;">
+                <img width="70rem" height="50rem" src="/img/OXXO.png" title="Imagen de empresa">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <span class="nav-item dropdown">
+                        <a class="nav-link dropdown-item" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <table>
+                                <tr>
+                                    <td rowspan="2">
+                                        <img src='/img/user.png' width="30rem"
+                                            height="30rem">&nbsp;&nbsp;
+                                    </td>
+                                    <td style="border-bottom: 1px solid black;">
+                                        &nbsp;<strong>{{session["username"]}}</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="margin-top: 0;">
+                                        &nbsp;<span style="font-size: smaller; color: white;">{{session['tipoUsuario']}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li style="text-align: center;">
+                                <button type="button" style="width: 85%;" class="btn" data-bs-toggle="modal" data-bs-target="#modalPerfil">
+                                    Perfil
+                                </button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li style="text-align: center;">
+                                <a class="dropdown-item" onclick="location.href='/admin/cerrar'">
+                                    <button type="button" style="width: 95%; margin: auto;" class="btn btn-danger">Cerrar sesión</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
