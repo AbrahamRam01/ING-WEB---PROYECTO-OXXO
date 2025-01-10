@@ -2,3 +2,4 @@ Flask==2.2.3
 Werkzeug==2.2.3
 Flask-MySQL==1.5.1
 Flask-Session==0.4.0
+gunicorn==20.1.0
