@@ -12,7 +12,7 @@ mysql = MySQL()
 app.secret_key = "genecos"
 
 # CONEXION BASE DE DATOS
-app.config["MYSQL_DATABASE_HOST"] = "localhost"
+app.config["MYSQL_DATABASE_HOST"] = "192.168.100.166"
 app.config["MYSQL_DATABASE_USER"] = "root"
 app.config["MYSQL_DATABASE_PASSWORD"] = "n0m3l0"
 app.config["MYSQL_DATABASE_DB"] = "oxxo"
