@@ -519,4 +519,4 @@ def inicio_admin():
         return render_template("admin/inicioOxxo.html",productos = productos, usuarios = usuarios, proveedor = proveedor, ventas = ventas, ventasDetalle = ventasDetalle, user = user, impuestos = impuestos,fecha = fecha,tipoUsuario = tipoUsuario, tipoProducto = tipoProducto)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
